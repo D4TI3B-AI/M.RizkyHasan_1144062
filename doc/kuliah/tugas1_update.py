@@ -1,3 +1,5 @@
+import timeit
+
 angka = {
         'satu' : 1, 'dua' : 2, 'tiga' : 3, 'empat' : 4, 'lima' : 5, 'enam' : 6, 'tujuh' :7, 'delapan' : 8, 'sembilan' : 9}
 
@@ -21,8 +23,10 @@ if d in angka :
 
 hasil = (a * b) + (c / d)
 
+start =timeit.timeit()
 print ("hasil", hasil) 
-
+end = timeit.timeit()
+print ("Waktu eksekusi : %s " % (end - start))
 
 
 
